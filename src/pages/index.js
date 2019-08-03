@@ -39,13 +39,15 @@ const IndexPage = () => (
             Techno Aritsts <br />
             Stockholm Sweden
           </p>
-          <Link>Discover More</Link>
+          <Link className="Button">Discover More</Link>
           <div className="SocialIcons">
-            <img
-              src={require('../images/Facebook.svg')}
-              alt="Facebook"
-              width="50"
-            />
+            <a href="www.facebook.com/cronjeempyre">
+              <img
+                src={require('../images/Facebook.svg')}
+                alt="Facebook"
+                width="50"
+              />
+            </a>
             <img
               src={require('../images/Instagram.svg')}
               alt="Instagram"
