@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Cronje Empyre`,
+    description: `Andreas “Cronje” Michael Strand (SE) & Matt “Empyre” (NZ) met for the first time at a techno party in Stockholm, Sweden. It was here they were to develop a new kind of friendship together that would shape the foundations for the newly started but over 15 years experienced DJ & production duo partnership.`,
+    author: `Matt Empyre`,
+    keywords:
+      'Cronje Empyre, DJ Cronje Empyre, Matt Empyre, Cronje, Techno, Producer, Dance Music, Sweden, New Zealand, Melodic',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,7 +20,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `CronjeEmpyre`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
@@ -30,5 +32,12 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: 'dy87x7vh060i',
+        accessToken: 'Wq-m1tnyxq7pjXcyEPIa7CJoQmIhi0BnWc7ss6T9mBs',
+      },
+    },
   ],
 }
