@@ -36,7 +36,7 @@ const IndexPage = () => (
         <div className="HeroGroup">
           <h1>CRONJE EMPYRE</h1>
           <p>
-            Production/DJ duo based in <br />
+            Techno Aritsts <br />
             Stockholm Sweden
           </p>
           <Link>Discover More</Link>
