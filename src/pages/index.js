@@ -7,6 +7,7 @@ import Wave from '../components/Wave'
 import staticdata from '../../staticdata.json'
 import Cell from '../components/Cell'
 import styled from 'styled-components'
+import SocialIcons from '../components/SocialIcons'
 
 //Styles
 const SectionCaption = styled.p`
@@ -40,40 +41,7 @@ const IndexPage = () => (
             Stockholm Sweden
           </p>
           <Link className="Button">Discover More</Link>
-          <div className="SocialIcons">
-            <a href="www.facebook.com/cronjeempyre">
-              <img
-                src={require('../images/Facebook.svg')}
-                alt="Facebook"
-                width="50"
-              />
-            </a>
-            <img
-              src={require('../images/Instagram.svg')}
-              alt="Instagram"
-              width="50"
-            />
-            <img
-              src={require('../images/Spotify.svg')}
-              alt="Spotify"
-              width="50"
-            />
-            <img
-              src={require('../images/Beatport.svg')}
-              alt="Beatport"
-              width="50"
-            />
-            <img
-              src={require('../images/Soundcloud.svg')}
-              alt="Soundcloud"
-              width="50"
-            />
-            <img
-              src={require('../images/Mixcloud.svg')}
-              alt="Mixcloud"
-              width="50"
-            />
-          </div>
+          <SocialIcons />
           <Wave />
         </div>
       </div>
